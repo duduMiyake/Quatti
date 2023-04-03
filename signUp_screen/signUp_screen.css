@@ -1,67 +1,70 @@
 
 body{
-   background-color: #000000;
-}
-
-.form-control{
-    background-color: #D9D9D9;
-    margin-bottom: 10px;
-    max-width: 440px;
-}
-
-.form-control:focus{
-    background-color: #D9D9D9;
-    border-color: #D9D9D9;
-}
-
-
-#box{
-    color: #000000;
-    background: linear-gradient(to right,#CD9E58 0, #CD9E58 60%, #DAA213 30%);
-    border-radius: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    padding: 5%;
-    width: 873.59px;
-    height: 591.3px;
-}
-
-.row {
-    width: 873.59px;
-    height: 591.3px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-45%,-40%);
-    position: absolute;
-}
-
-.btn{
-    background-color: black;
-    border: #000000; 
-    align-content: center; 
-}
-
-.btn:hover{
     background-color: #000000;
-}
-
-.btn:active {
-    background-color: #000000;
-}
-
-#account{
-    font-size: 40px;
-    color: #000000; 
-}
-
-#welcome-message {
-    font-size: 30px;
-}
-
-#logo-icon {
-    margin-left: 20px;
-}
+ }
+ 
+ .form-control{
+     background-color: #D9D9D9;
+     margin-bottom: 10px;
+     max-width: 440px;
+ }
+ 
+ .form-control:focus{
+     background-color: #D9D9D9;
+     border-color: #D9D9D9;
+ }
+ 
+ 
+ #box{
+     color: #000000;
+     background: linear-gradient(to right,#CD9E58 0, #CD9E58 60%, #DAA213 30%);
+     border-radius: 20px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     padding: 5%;
+     width: 873.59px;
+     height: 591.3px;
+ }
+ 
+ .row {
+     width: 873.59px;
+     height: 591.3px;
+     top: 50%;
+     left: 50%;
+     transform: translate(-45%,-40%);
+     position: absolute;
+ }
+ 
+ .btn{
+     background-color: black;
+     border: #000000; 
+     margin-left: 55px;
+     border-radius: 20%;
+     width: 150px;
+     height: 80px;
+ }
+ 
+ .btn:hover{
+     background-color: #000000;
+ }
+ 
+ .btn:active {
+     background-color: #000000;
+ }
+ 
+ #account{
+     font-size: 40px;
+     color: #000000; 
+ }
+ 
+ #welcome-message {
+     font-size: 30px;
+ }
+ 
+ #logo-icon {
+     margin-left: 20px;
+ }
     
    
