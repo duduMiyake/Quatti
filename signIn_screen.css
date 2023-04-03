@@ -1,0 +1,35 @@
+body{
+    background-image: linear-gradient(to right, #CD9E58 65%, rgb(0, 0, 0) 50%);
+}
+
+#Login{
+    color: white;
+    font-size: 60px;
+}
+
+#logo-icon{
+    margin-left: 200px;
+}
+
+.btn{
+    background-color: black;
+    border: #000000; 
+    margin-left: 280px;
+    border-radius: 10%;
+    width: 200px;
+    height: 80px;
+}
+
+.btn2{
+    background-color: #CD9E58;
+    border: #000000; 
+    margin-left: 1225px;
+    border-radius: 10%;
+    width: 200px;
+    height: 80px;
+}
+
+#dont-have{
+    color: white;
+}
+
