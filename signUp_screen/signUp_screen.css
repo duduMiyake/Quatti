@@ -1,45 +1,67 @@
 
-    body{
-        background-color: #000000;
-        text-align: center;
-        font-weight: bold;
-        
-    }
-    form{
-        color: rgb(0, 0, 0); 
-    }
-    .form-control{
-       background-color: #D9D9D9;
-    }
-    .form-control:hover{
-        background-color: #D9D9D9;
-    }
+body{
+   background-color: #000000;
+}
+
+.form-control{
+    background-color: #D9D9D9;
+    margin-bottom: 10px;
+    max-width: 440px;
+}
+
+.form-control:focus{
+    background-color: #D9D9D9;
+    border-color: #D9D9D9;
+}
 
 
-    #box{
-        color: #000000;
-        background: linear-gradient(to right,#CD9E58 0, #CD9E58 70%, #DAA213 30%);
-        position: absolute;
-        top: 40%;
-        left: 15%;
-        /*transform: translate(50%, -50%);*/
-        border-radius: 10%;
-        padding: 23%;
-        width: 70%;
-        height: 70%;
-    }
+#box{
+    color: #000000;
+    background: linear-gradient(to right,#CD9E58 0, #CD9E58 60%, #DAA213 30%);
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 5%;
+    width: 873.59px;
+    height: 591.3px;
+}
 
-    .btn{
-        background-color: black;
-        border: #000000;   
-    }
+.row {
+    width: 873.59px;
+    height: 591.3px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%,-40%);
+    position: absolute;
+}
 
-    #account{
-        font-size: 40px;
-        color: #000000;
-        
-    }
+.btn{
+    background-color: black;
+    border: #000000; 
+    align-content: center; 
+}
 
+.btn:hover{
+    background-color: #000000;
+}
 
+.btn:active {
+    background-color: #000000;
+}
+
+#account{
+    font-size: 40px;
+    color: #000000; 
+}
+
+#welcome-message {
+    font-size: 30px;
+}
+
+#logo-icon {
+    margin-left: 20px;
+}
     
    
