@@ -56,3 +56,18 @@ body{
     margin-left: 0%;
 }
 
+.profile-feed{
+    color: white;
+}
+
+.btn-profile {
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 0%;
+}
+
+.btn-profile:hover {
+    background-color: #46464649;
+    border-color: transparent;
+    transition: 0.5s;
+}
