@@ -1,43 +1,54 @@
-body{
+body {
     background-image: linear-gradient(to right, #CD9E58 65%, rgb(0, 0, 0) 50%);
 }
 
-#Login{
+#Login {
     color: white;
     font-size: 40px;
 }
 
-.btn{
+#logo-icon {
+    margin-left: 28px;
+}
+
+.row {
+    width: 1200px;
+}
+
+.btn-signIn {
     background-color: black;
-    border: #000000; 
+    color: white;
+    font-weight: 600;
+    border: #000000;
     border-radius: 10px;
-    width: 200px;
-    height: 80px;
+    width: 150px;
+    height: 60px;
 }
 
-.btn2{
+.btn-signUp {
     background-color: #CD9E58;
-    border: #000000; 
-    border-radius: 10px;
+    color: black;
+    font-weight: 600;
+    border: #000000;
     margin-top: 20%;
-    width: 200px;
-    height: 80px;
+    border-radius: 10px;
+    width: 150px;
+    height: 60px;
 }
 
-#dont-have{
+#dont-have {
     color: white;
     font-size: 40px;
     height: 160px;
 }
 
-#text{
+#left-side {
+    width: 650px;
+    margin-right: 120px;
+}
+
+#right-side {
+    margin-top: 9%;
+    margin-left: 100px;
     color: white;
-    font-size: 20px;
 }
-
-
-form{
-    width: 550px;
-    height: 100px;
-}
-
