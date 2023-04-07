@@ -9,46 +9,68 @@ body {
 
 #logo-icon {
     margin-left: 28px;
+    width: 200px;
+    height: 200px;
+}
+
+#dont-have {
+    color: white;
+    font-size: 40px;
+}
+
+#sign-up-now {
+    font-size: 20px;
+    color: white;
 }
 
 .row {
     width: 1200px;
 }
 
+form {
+    width: auto;
+}
+
 .btn-signIn {
     background-color: black;
     color: white;
+    font-size: 1.176vw;
     font-weight: 600;
     border: #000000;
     border-radius: 10px;
-    width: 150px;
-    height: 60px;
+    width: 11.029vw;
+    height: 10vh;
+}
+
+.btn-signIn:hover {
+    background-color: rgb(63, 63, 63);
+    transition: 0.5s;
 }
 
 .btn-signUp {
     background-color: #CD9E58;
     color: black;
+    font-size: 1.176vw;
     font-weight: 600;
     border: #000000;
-    margin-top: 20%;
+    margin-top: 4.4vh;
     border-radius: 10px;
-    width: 150px;
-    height: 60px;
+    width: 11.029vw;
+    height: 10vh;
 }
 
-#dont-have {
-    color: white;
-    font-size: 40px;
-    height: 160px;
+.btn-signUp:hover {
+    background-color: #9b7843;
+    transition: 0.5s;
 }
 
 #left-side {
-    width: 650px;
-    margin-right: 120px;
+    width: 53vw;
+    margin-right: 190px;
 }
 
 #right-side {
-    margin-top: 9%;
-    margin-left: 100px;
+    width: 15.074vw;
+    margin-top: 60px;
     color: white;
 }
