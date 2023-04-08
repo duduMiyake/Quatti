@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #1E1E1E;
 }
 
@@ -10,6 +10,7 @@ body{
 .navbar-custom {
     background-color: #FFC062;
 }
+
 /*barra de procurar*/
 .navbar-custom .form-control {
     background-color: #DAA213;
@@ -22,13 +23,14 @@ body{
     color: #1E1E1E;
     margin-right: 5%;
 }
+
 /*icones de logo*/
 .navbar-brand {
     margin-right: 10%;
 }
 
 /*icones da navbar*/
-.navbar-custom .nav-link {      
+.navbar-custom .nav-link {
     margin-left: 30%;
 }
 
@@ -38,8 +40,25 @@ body{
     color: whitesmoke;
 }
 
+
+/*css perfil*/
+
+.first-row {
+    margin-top: 60px;
+    color: whitesmoke;
+}
+
 #foto-perfil {
-    margin: 7%;
+    width: 250px;
+    height: 250px;
+}
+
+#edit-profile {
+    color: white;
+}
+
+#edit-profile:hover {
+    color: darkgrey
 }
 
 .profile-custom {
@@ -47,27 +66,41 @@ body{
 }
 
 #username {
-    font-size: large;  
-    opacity: 60%; 
-    margin: 0.5%;
+    opacity: 60%;
+    margin-top: 0.5%;
 }
 
 #bio {
-    margin-left: 0%;
+    margin-top: 5%;
 }
 
-.profile-feed{
+#highlight-icon {
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+}
+
+.second-row {
     color: white;
+    width: 850px;
 }
 
-.btn-profile {
+
+.btn {
     background-color: transparent;
     border-color: transparent;
     border-radius: 0%;
 }
 
-.btn-profile:hover {
-    background-color: #46464649;
+.btn:hover {
+    background-color: transparent;
     border-color: transparent;
-    transition: 0.5s;
+}
+
+#achievements {
+    color: whitesmoke;
+}
+
+#achievements:hover {
+    color: darkgrey
 }
