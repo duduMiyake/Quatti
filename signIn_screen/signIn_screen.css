@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(to right, #CD9E58 65%, rgb(0, 0, 0) 50%);
+    background-color: #000000
 }
 
 #Login {
@@ -23,12 +23,8 @@ body {
     color: white;
 }
 
-.row {
-    width: 1170px;
-}
-
 form {
-    width: auto;
+    width: 90%;
 }
 
 #erro-message {
@@ -38,12 +34,11 @@ form {
 .btn-signIn {
     background-color: black;
     color: white;
-    font-size: 1.176vw;
     font-weight: 600;
     border: #000000;
     border-radius: 10px;
-    width: 11.029vw;
-    height: 10vh;
+    width: 150px;
+    height: 60px;
 }
 
 .btn-signIn:hover {
@@ -54,13 +49,12 @@ form {
 .btn-signUp {
     background-color: #CD9E58;
     color: black;
-    font-size: 1.176vw;
     font-weight: 600;
     border: #000000;
     margin-top: 4.4vh;
     border-radius: 10px;
-    width: 11.029vw;
-    height: 10vh;
+    width: 150px;
+    height: 60px;
 }
 
 .btn-signUp:hover {
@@ -68,12 +62,15 @@ form {
     transition: 0.5s;
 }
 
-#left-side {
-    width: 700px;
+.left-side {
+    background-color: #CD9E58;
+    border-radius:  20px;
 }
 
-#right-side {
-    width: 300px;
-    margin-top: 60px;
-    color: white;
+.right-side {
+    background-color: #000000;
+}
+
+#box {
+    padding: 2%;
 }
