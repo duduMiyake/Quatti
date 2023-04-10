@@ -1,0 +1,128 @@
+body {
+    background-color: #1E1E1E;
+}
+
+/*navbar customização*/
+#div-conteiner {
+    margin-left: 2%;
+}
+
+.navbar-custom {
+    background-color: #FFC062;
+}
+
+/*barra de procurar*/
+.navbar-custom .form-control {
+    background-color: #DAA213;
+    border-color: #DAA213;
+    width: 300px;
+}
+
+.navbar-custom .btn {
+    border-color: #1E1E1E;
+    color: #1E1E1E;
+    margin-right: 5%;
+}
+
+/*icones de logo*/
+.navbar-brand {
+    margin-right: 10%;
+}
+
+/*icones da navbar*/
+.navbar-custom .nav-link {
+    margin-left: 30%;
+}
+
+#btn_search:hover {
+    background-color: #1E1E1E;
+    transition: 0.25s ease-in-out;
+    color: whitesmoke;
+}
+
+#box {
+    width: 400px;
+    height: 450px;
+    top: 47%;
+    left: 82%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    background-color: #DAA213;
+    border-radius: 20px;
+    position: absolute;
+    padding: 30px;
+}
+
+#box-2 {
+    width: 500px;
+}
+
+#txt-message {
+    text-align-last: center;
+    margin-bottom: 15px;
+}
+
+#txt-message2 {
+    margin-top: 15px;
+}
+
+.choice {
+    margin-top: 20px;
+}
+
+.btn-choose {
+    color: white;
+    background-color: transparent;
+    text-align-last: center;
+    width: 200px;
+}
+
+.btn-choose:hover {
+    color: white;
+    background-color: #474747;
+}
+
+.btn-choose:active:hover {
+    color: white;
+    background-color: #474747;
+}
+
+.btn-quatti {
+    width: 250px;
+    height: 60px;
+    top: 90%;
+    left: 82%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    background-color: #DAA213;
+    border-radius: 30px;
+    position: absolute;
+}
+
+#txt-quatti {
+    margin-top: -5px;
+}
+
+.btn-quatti:hover {
+    background-color: #b48610;
+}
+
+.btn-quatti:active:hover {
+    color: #000000;
+    background-color: #b48610;
+}
+
+#foto-msg {
+    border-radius: 120px;
+    background-color: #1E1E1E;
+    text-align-last: center;
+}
+
+label {
+    width: fit-content;
+}
+
+#btn-msg1:hover {
+    opacity: 80%;
+    background-color: #b48610b9;
+}
