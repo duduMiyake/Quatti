@@ -24,7 +24,7 @@ body {
 }
 
 .row {
-    width: 1200px;
+    width: 1170px;
 }
 
 form {
@@ -69,12 +69,11 @@ form {
 }
 
 #left-side {
-    width: 53vw;
-    margin-right: 190px;
+    width: 700px;
 }
 
 #right-side {
-    width: 15.074vw;
+    width: 300px;
     margin-top: 60px;
     color: white;
 }
