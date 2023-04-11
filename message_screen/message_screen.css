@@ -63,6 +63,17 @@ body {
     top: 10%;
 }
 
+#foto-msg {
+    border-radius: 120px;
+    background-color: #1E1E1E;
+    text-align-last: center;
+}
+
+#txt-message {
+    margin-top: 15px;
+}
+
+
 .btn-msg {
     border-color: #1E1E1E;
 }
@@ -70,4 +81,8 @@ body {
 .btn-msg:hover {
     opacity: 80%;
     background-color: #b48610b9;
+}
+
+#write {
+    top: 90%;
 }
