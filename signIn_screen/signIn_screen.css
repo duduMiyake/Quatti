@@ -24,11 +24,7 @@ body {
 }
 
 form {
-    width: 90%;
-}
-
-#erro-message {
-    visibility: hidden;
+    width: auto;
 }
 
 .btn-signIn {
@@ -55,11 +51,13 @@ form {
     border-radius: 10px;
     width: 150px;
     height: 60px;
+    text-align: center;
 }
 
 .btn-signUp:hover {
     background-color: #9b7843;
     transition: 0.5s;
+    color: black;
 }
 
 .left-side {
