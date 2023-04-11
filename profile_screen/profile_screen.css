@@ -82,17 +82,18 @@ body {
 
 .second-row {
     color: white;
-    width: 850px;
+    width: 100%;
+    margin-top: 30px;
 }
 
 
-.btn {
+.btn-choose {
     background-color: transparent;
     border-color: transparent;
     border-radius: 0%;
 }
 
-.btn:hover {
+.btn-choose:hover {
     background-color: transparent;
     border-color: transparent;
 }
