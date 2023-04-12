@@ -1,0 +1,139 @@
+body {
+    background-color: #DAA213;
+}
+
+/*navbar customização*/
+#div-conteiner {
+    margin-left: 2%;
+}
+
+.navbar-custom {
+    background-color: #FFC062;
+}
+
+/*barra de procurar*/
+.navbar-custom .form-control {
+    background-color: #DAA213;
+    border-color: #DAA213;
+    width: 300px;
+}
+
+.navbar-custom .btn {
+    border-color: #1E1E1E;
+    color: #1E1E1E;
+    margin-right: 5%;
+}
+
+/*icones de logo*/
+.navbar-brand {
+    margin-right: 10%;
+}
+
+/*icones da navbar*/
+.navbar-custom .nav-link {
+    margin-left: 30%;
+}
+
+#btn_search:hover {
+    background-color: #1E1E1E;
+    transition: 0.25s ease-in-out;
+    color: whitesmoke;
+}
+
+/*fim da navbar*/
+
+
+#box {
+    background-color: #1E1E1E;
+    width: 70%;
+    height: 82%;
+    left: 30%;
+    position: absolute;
+    text-align: center;
+}
+
+.first {
+    width: 100%;
+    height: 82%;
+}
+
+.second {
+    width: 100%;
+    height: 18%;
+    top: 10%;
+}
+
+#foto-msg {
+    border-radius: 120px;
+    background-color: #1E1E1E;
+    text-align-last: center;
+}
+
+#txt-message {
+    margin-top: 15px;
+}
+
+
+.btn-msg {
+    border-color: #1E1E1E;
+}
+
+.btn-msg:hover {
+    opacity: 80%;
+    background-color: #b48610b9;
+}
+
+#write {
+    top: 90%;
+}
+
+
+#boxmsg{
+    color: white;
+}
+
+.mensagem {
+    background-color: #DAA213;
+    border: 1px solid #DAA213;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 400px;
+    position: absolute;
+    left: 10%;
+  }
+
+  .mensagem2 {
+    background-color: #a77c0f;
+    border: 1px solid #DAA213;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 400px;
+    position: absolute;
+    right: 5%;
+    top: 25%;
+  }
+  
+  .mensagem p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  #boxDigit{
+    position: absolute;
+    top: 105%;
+  }
+
+  .btnsend{
+    right: 15%;
+    position: absolute;
+    top:104%;
+    border-radius: 12px;
+    width: 100px;
+    height: 50px;
+    color: rgb(12, 12, 12);
+    background-color: #cc9d25;
+
+
+  }
