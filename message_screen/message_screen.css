@@ -156,3 +156,7 @@ p {
     background-color: rgb(43, 43, 43);
     transition: 0.5s;
 }
+
+.btn-send:active:hover {
+    background-color: rgb(43, 43, 43);
+}
