@@ -2,82 +2,66 @@
 <html lang="en">
 
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="config_screen.css">
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Configuration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="config_screen.css">
 </head>
 
 <body>
     <div class="container">
-
-        
-
-        <div class="row justify-content-end">
-            <div class="col-4">
-                <button type="button" class="btn btn-primary btn-lg" id="btn_logout">Logout</button>
+        <div class="row justify-content-between row-custom">
+            <div class="col-2">
+                <a class="btn btn-primary" href="../profile_screen/profile_screen.html" role="button">
+                    Voltar
+                </a>
+            </div>
+            <div class="col-3 text-end">
+                <a class="btn btn-primary" href="../signIn_screen/signIn_screen.html" role="button">
+                    Logout
+                </a>
             </div>
         </div>
-
-       
-
-
-
-        <div class="row">
-        <button type="button" class="btn btn-primary btn-lg" id="btn_edit">EDIT</button>
-        </div>
-
-
-
-
-
-        <div>
-            <img src="https://cdn-icons-png.flaticon.com/512/5987/5987424.png" alt="" width="180" height="180" id="foto-perfil">
-        </div>
-
-        <div class="row" id="formcont">
-                <div class="col-6" id="nick">
-                <form class="d-flex" role="search">
-                    <input class="form-control barra me-2" type="search" placeholder="Nickname" aria-label="Search">
+        <div class="row row-custom">
+            <div class="col-3 text-center">
+                <img src="../Imagens/icone-perfil-default.png" alt="icone_de_perfil" id="foto-perfil" >
+                <h6 style="margin-top: 25px;">
+                    <a href="#" id="edit-profile">Change photo</a>
+                </h6>
+            </div>
+            <div class="col-4 align-self-center col-nicks">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="InputNickname" placeholder="Nickname">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="InputUsername" placeholder="Username">
+                    </div>  
                 </form>
-                </div>
-                
-            <div class="row" id="user">
-                <div class="col-6">
-                <form class="usuario" role="username">
-                    <input class="form-control barra me-2" type="search" placeholder="User name" aria-label="Search">
-                </form>
-                </div>
             </div>
         </div>
-            
-
-        <div class= "row">
-            <div class="col-3" id="bio">
-            <textarea placeholder="bio" name="" id="" cols="30" rows="10"></textarea>
-        </div>
-            <div class="col-3" id="buttons">
-                <button type="button" class="btn btn-primary btn-lg" id="btn_save">SAVE</button>
-
+        <div class="row justify-content-between">
+            <div class="col-2">
+                <textarea name="bioForm" id="Inputbio" cols="32" rows="6" style="resize: none;" placeholder="Write your bio here"></textarea>
             </div>
-            <div class="col-3" id="buttons">
-                <button type="button" class="btn btn-primary btn-lg" id="btn_cpass">Change
-                    Password</button> 
+            <div class="col-3 text-end">
+                <a class="btn btn-primary" id="btn-change_password" href="../password_screen/verification_screen.html" role="button">
+                    Change password
+                </a>
+            </div>
+            <div class="col-3">
+                <a class="btn btn-primary" href="../profile_screen/profile_screen.html" role="button">
+                    Save
+                </a>
             </div>
         </div>
-
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-
-
 </body>
 
 </html>

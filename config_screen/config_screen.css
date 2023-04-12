@@ -1,121 +1,56 @@
-body{
-    background-color: #1E1E1E;
+body {
+    background-color: #000000;
 }
 
-/*navbar customização*/
-#div-conteiner {
-    margin-left: 2%;
+.row-custom {
+    margin-bottom: 50px;
 }
 
-.navbar-custom {
-    background-color: #FFC062;
-}
-/*barra de procurar*/
-.navbar-custom .form-control {
-    background-color: #DAA213;
-    border-color: #DAA213;
-    width: 300px;
+#foto-perfil {
+    width: 250px;
+    height: 250px;
 }
 
-.navbar-custom .btn {
-    border-color: #1E1E1E;
-    color: #1E1E1E;
-    margin-right: 5%;
-}
-/*icones de logo*/
-.navbar-brand {
-    margin-right: 10%;
+#edit-profile {
+    color: white;
 }
 
-/*icones da navbar*/
-.navbar-custom .nav-link {      
-    margin-left: 30%;
+.form-group {
+    margin-bottom: 30px;
 }
 
-#btn_search:hover {
-    background-color: #1E1E1E;
-    transition: 0.25s ease-in-out;
-    color: whitesmoke;
+.form-control {
+    padding: 15px;
+    border-radius: 20px;
 }
 
-
-
-#btn_logout:hover {
-    background-color: #f5b75a
+.col-nicks {
+    margin-left: 50px;
 }
 
-#btn_edit {
-    padding: 12px 28px;
+.btn {
+    background-color: #CD9E58;
+    color: black;
+    font-weight: 600;
+    border: #000000;
+    margin-top: 4.4vh;
+    border-radius: 10px;
+    width: 100px;
+    padding: 15px;
+    text-align: center;
 }
 
-#btn_edit:hover {
-    background-color: #808080
-}
-#btn_save {
-    background-color: #DAA213;
-   
-   
+.btn:hover {
+    background-color: #9b7843;
+    transition: 0.5s;
+    color: black;
 }
 
-#btn_save:hover{
-    background-color: #FFC062;
+#btn-change_password {
+    width: 180px;
+    padding: 20px;
 }
 
-#btn_cpass{
-    background-color: #DAA213;
-    padding: 14px 40px;
-}
-
-#btn_cpass:hover{
-    background-color: #FFC062;
-}
-.btn{
-    background-color: #DAA213;
-    width: 200px;
-    height: 80px;
-    margin-top:20px;
-    bottom: 100px;
-}
-
-
-#form-control{
-    margin-bottom: 40px;
-}
-
-#user{
-    position: relative;
-    right: -380px;
-    top: -100px;
-    bottom: -120px;
-}
-
-#nick{
-    position: relative;
-    right: -380px;
-    top: -100px;
-}
-
-#buttons{
-    position: relative;
-    bottom: -100px;
-    right: -100px;
-}
-
-#bio{
-    position: relative;
-    bottom: -20px;
-    left: -20px;
-    border-radius: 8%;
-}
-
-#foto-perfil{
-    position: relative;
-    bottom: -50px;
-}
-
-#btn_logout{
-    position: relative;
-    bottom: -100px;
-    right: -300px;
-    
+#InputBio {
+    width: auto;
 }
