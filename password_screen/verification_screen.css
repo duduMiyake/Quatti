@@ -30,17 +30,19 @@ body {
     margin-bottom: 70px;
 }
 
-.btn-signIn {
+.btn {
     background-color: black;
     color: white;
     font-weight: 600;
     border: #000000;
+    margin-top: 4.4vh;
     border-radius: 10px;
     width: 150px;
-    height: 60px;
+    padding: 20px;
+    text-align: center;
 }
 
-.btn-signIn:hover {
+.btn:hover {
     background-color: rgb(43, 43, 43);
     transition: 0.5s;
 }
