@@ -34,7 +34,7 @@ form {
     border: #000000;
     border-radius: 10px;
     width: 150px;
-    height: 60px;
+    padding: 20px;
 }
 
 .btn-signIn:hover {
@@ -50,7 +50,7 @@ form {
     margin-top: 4.4vh;
     border-radius: 10px;
     width: 150px;
-    height: 60px;
+    padding: 20px;
     text-align: center;
 }
 
