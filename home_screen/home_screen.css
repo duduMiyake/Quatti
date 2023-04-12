@@ -7,6 +7,11 @@ body {
     margin-left: 2%;
 }
 
+.navbar {
+    position: fixed;
+    width: 100%;
+}
+
 .navbar-custom {
     background-color: #FFC062;
 }
@@ -52,11 +57,13 @@ body {
     background-color: #DAA213;
     border-radius: 20px;
     position: absolute;
+    position: fixed;
     padding: 2%;
 }
 
 #box-2 {
-    width: 80%;
+    width: 100%;
+    margin-top: 70px;
 }
 
 #txt-message {
@@ -77,7 +84,7 @@ body {
     color: white;
     background-color: transparent;
     text-align-last: center;
-    width: 120%;
+    width: 100%;
 }
 
 .btn-choose:hover {
@@ -100,6 +107,7 @@ body {
     background-color: #DAA213;
     border-radius: 2.206vw;
     position: absolute;
+    position: fixed;
 }
 
 #txt-quatti {
@@ -129,4 +137,47 @@ label {
 #btn-msg1:hover {
     opacity: 80%;
     background-color: #b48610b9;
+}
+
+/*feed*/
+.container-feed {
+    padding: 3%;
+    color: white;
+    border-style: ridge;
+    border-color: #272727;
+    width: 100%;
+    margin-left: 0%;
+}
+
+.row-text {
+    margin-left: 85px;
+}
+
+.imagens {
+    width: auto;
+    height: 250px;
+    margin-top: 15px;
+}
+
+.escritas {
+    width: auto;
+    height: auto;
+     margin-top: 15px;
+}
+
+.row-items {
+    margin-top: 20px;
+}
+
+#first-item {
+    margin-left: 85px;
+}
+
+#items {
+    border-radius: 80px;
+}
+
+#items:hover {
+    background-color: #3d3d3d;
+    transition: 0.5s;
 }
