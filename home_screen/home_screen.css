@@ -134,6 +134,12 @@ label {
     width: fit-content;
 }
 
+#btn-msg1 {
+    color: #000000;
+    background-color: transparent;
+    border-color: transparent;
+}
+
 #btn-msg1:hover {
     opacity: 80%;
     background-color: #b48610b9;
