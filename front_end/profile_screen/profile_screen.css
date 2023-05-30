@@ -1,0 +1,159 @@
+body {
+    background-color: #1E1E1E;
+}
+
+/*navbar customização*/
+#div-conteiner {
+    margin-left: 2%;
+}
+
+.navbar-custom {
+    background-color: #FFC062;
+}
+
+/*barra de procurar*/
+.navbar-custom .form-control {
+    background-color: #DAA213;
+    border-color: #DAA213;
+    width: 300px;
+}
+
+.navbar-custom .btn {
+    border-color: #1E1E1E;
+    color: #1E1E1E;
+    margin-right: 5%;
+}
+
+/*icones de logo*/
+.navbar-brand {
+    margin-right: 10%;
+}
+
+/*icones da navbar*/
+.navbar-custom .nav-link {
+    margin-left: 30%;
+}
+
+#btn_search:hover {
+    background-color: #1E1E1E;
+    transition: 0.25s ease-in-out;
+    color: whitesmoke;
+}
+
+
+/*css perfil*/
+
+.first-row {
+    margin-top: 60px;
+    color: whitesmoke;
+}
+
+#foto-perfil {
+    width: 250px;
+    height: 250px;
+}
+
+#edit-profile {
+    color: white;
+}
+
+#edit-profile:hover {
+    color: darkgrey
+}
+
+.profile-custom {
+    color: white;
+}
+
+#username {
+    opacity: 60%;
+    margin-top: 0.5%;
+}
+
+#bio {
+    margin-top: 5%;
+}
+
+.second-row {
+    color: white;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+
+#btn-feed {
+    background-color: #46464649;
+}
+
+.btn-choose {
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 0%;
+}
+
+.btn-choose:hover {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn-choose:active:hover {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+#achievements {
+    color: whitesmoke;
+}
+
+#achievements:hover {
+    color: darkgrey
+}
+
+#achievements-side {
+    position: fixed;
+    right: 4%;
+}
+
+/*feed de mensagens*/
+.container-feed {
+    padding: 3%;
+    color: white;
+    background-color: #252525;
+    width: 70%;
+    margin-left: 0%;
+    margin-bottom: 5px;
+}
+
+.row-text {
+    margin-left: 85px;
+}
+
+.imagens {
+    width: auto;
+    height: 250px;
+    margin-top: 15px;
+}
+
+.escritas {
+    width: auto;
+    height: auto;
+     margin-top: 15px;
+}
+
+.row-items {
+    margin-top: 20px;
+}
+
+#first-item {
+    margin-left: 85px;
+}
+
+#items {
+    border-radius: 80px;
+}
+
+#items:hover {
+    background-color: #3d3d3d;
+    transition: 0.5s;
+}
