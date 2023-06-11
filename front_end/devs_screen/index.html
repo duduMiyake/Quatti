@@ -76,6 +76,7 @@
         function excluirConta(id) {
             axios.delete('http://localhost:3000/conta/'+ id +'')
             .then(function(response){
+                alert('Conta "'+ response.data.nickname + '" excluida com sucesso!')
                 location.reload();
             })
             .catch(function (err){

@@ -1,16 +1,20 @@
-const btnFeed = document.getElementById('btn-feed')
-const btnLikes = document.getElementById('btn-likes')
+document.addEventListener('DOMContentLoaded', function () {
+    const token = localStorage.getItem('token')
+    const tokenParts = token.split('.');
+    const payload = JSON.parse(atob(tokenParts[1]));
 
-btnFeed.addEventListener('click', () => {
-    btnFeed.style.backgroundColor = '#46464649'
-    btnFeed.style.transition = '.5s ease'
-    btnLikes.style.backgroundColor = 'transparent'
-    btnLikes.style.transition = '.5s ease'
-});
+    axios.get("http://localhost:3000/conta/" + payload.userId, {
+        headers: {
+            Authorization: "Bearer " + token
+        }
+    })
+        .then(response => {
+            document.getElementById('nickname').innerHTML = response.data.nickname
+            document.getElementById('username').innerHTML = '@' + response.data.username
+            console.log(response.data.email)
 
-btnLikes.addEventListener('click', () => {
-    btnLikes.style.backgroundColor = '#46464649'
-    btnLikes.style.transition = '.5s ease'
-    btnFeed.style.backgroundColor = 'transparent'
-    btnFeed.style.transition = '.5s ease'
-});
+        })
+        .catch(function (err) {
+            alert(err.message)
+        })
+})
