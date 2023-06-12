@@ -5,25 +5,25 @@
         const confirm = document.getElementById("InputConfirm")
 
         function quatti() {
-            console.log("entrou");
+            // console.log("entrou");
             const form = document.getElementById("form")
-            const InputEmail = email.value;
-            const InputUser = usename.value;
-            const InputNick = nickname.value;
-            const InputPassword = password.value;
-            const InputConfirm = confirm.value
+            const inputEmail = email.value;
+            const inputUser = usename.value;
+            const inputNick = nickname.value;
+            const inputPassword = password.value;
+            const inputConfirm = confirm.value
 
-            if (InputEmail == '' || InputUser == '' || InputNick == '' || InputPassword == '' || InputConfirm == '') {
+            if (inputEmail == '' || inputUser == '' || inputNick == '' || inputPassword == '' || inputConfirm == '') {
                 alert("Preencha todos os campos!")
                 return
             }
 
-            if (InputConfirm != InputPassword) {
+            if (inputConfirm != inputPassword) {
                 alert("Erro! As senhas não coincidem.");
                 return
             }
 
-            axios.get("http://localhost:3000/conta/email/" + InputEmail)
+            axios.get("http://localhost:3000/conta/email/" + inputEmail)
                 .then(response => {
 
                     if (response.data.length > 0) {
@@ -33,10 +33,10 @@
                     }
 
                     axios.post("http://localhost:3000/conta", {
-                        email: InputEmail,
-                        username: InputUser,
-                        nickname: InputNick,
-                        password: InputPassword
+                        email: inputEmail,
+                        username: inputUser,
+                        nickname: inputNick,
+                        password: inputPassword
 
                     }).then((response) => {
                         const token = response.data.token;

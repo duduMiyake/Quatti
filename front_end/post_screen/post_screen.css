@@ -33,7 +33,7 @@ body {
 
 .txtArea {
     margin-bottom: 20px;
-    height: 150px;
+    height: 280px;
     resize:none;
     background-color:#CD9E58;
     border-color: #000000;
@@ -48,13 +48,13 @@ body {
     border-color: #000000;
 }
 
-.file {
+/* .file {
     width: 365px;
 }
 
 #inputFile {
     margin-bottom: 30px;
-}
+} */
 
 .btn {
     font-size: 15pt;
