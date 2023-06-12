@@ -19,8 +19,6 @@ const router = express.Router();
 
 router.get('/', (req, res) => res.json({ message: 'Funcionando!' }));
 
-
-
 /* GET postagem */
 router.get('/postagem/:id?', async function(req, res, next) {
     try{
@@ -41,7 +39,27 @@ router.post('/postagem', async function(req, res, next){
     try{
       const postagem = req.body;
       const db = await connect();
-      res.json(await db.collection("postagem").insertOne(postagem));
+      const result = await db.collection("postagem").insertOne(postagem);
+
+      const postagemId = result.insertedId
+      postagem.comentarios = 0
+      postagem.curtidas = 0
+
+      console.log("id da postagem: " + postagemId)
+      console.log("texto da postagem: " + postagem.texto)
+      console.log("id do usuario: " + postagem.id_usuario)
+
+      const novaPostagem = {
+        _id: postagemId,
+        texto: postagem.texto,
+        comentarios: 0,
+        curtidas: 0,
+        id_usuario: postagem.id_usuario,
+        username: postagem.username,
+        nickname: postagem.nickname
+      }
+
+      res.json(novaPostagem);
     }
     catch(ex){
       console.log(ex);
