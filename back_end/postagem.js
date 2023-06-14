@@ -9,7 +9,7 @@ async function connect(){
 
 const express = require('express');
 const app = express();         
-const port = 3000; 
+const port = 4000; 
 app.use(require('cors')());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -42,7 +42,6 @@ router.post('/postagem', async function(req, res, next){
       const result = await db.collection("postagem").insertOne(postagem);
 
       const postagemId = result.insertedId
-      postagem.comentarios = 0
       postagem.curtidas = 0
 
       console.log("id da postagem: " + postagemId)
@@ -52,8 +51,7 @@ router.post('/postagem', async function(req, res, next){
       const novaPostagem = {
         _id: postagemId,
         texto: postagem.texto,
-        comentarios: 0,
-        curtidas: 0,
+        like: postagem.curtidas,
         id_usuario: postagem.id_usuario,
         username: postagem.username,
         nickname: postagem.nickname

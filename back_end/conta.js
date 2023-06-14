@@ -109,6 +109,32 @@ router.post('/conta', async function (req, res, next) {
 }
 });
 
+//post para o login (assinatura do token)
+app.post('/login', async (req, res) => {
+  const { email, password } = req.body;
+
+  try {
+    const db = await connect();
+    const user = await db.collection("conta").findOne({ email });
+
+    if (!user) {
+      return res.status(404).json({ error: 'Usuário não encontrado' }); //404 erro de nao encontrado
+    }
+
+    if (user.password !== password) {
+      return res.status(401).json({ error: 'Senha incorreta' });  //401 erro de autorizacao invalida
+    }
+
+    const token = jwt.sign({ userId: user._id, email: user.email }, SECRET, { expiresIn: '1h' });
+
+    res.json({ token });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Erro ao fazer login' }); //500 erro no servidor
+  }
+});
+
+
 // PUT /conta/{id}
 router.put('/conta/:id', async function (req, res, next) {
   try {
