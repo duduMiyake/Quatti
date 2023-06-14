@@ -1,15 +1,37 @@
-const usuario = "teste@email.com"
-const senha = 123456
-const btnAcesso = document.getElementsById('btn-acesso')
-const erroMessage = document.getElementById('erro-message')
+const email = document.getElementById("InputEmail");
+const password = document.getElementById("InputPassword");
 
-btnAcesso.addEventListener('click', () => {
-    let emailInput = document.getElementById('InputEmail').value
-    let senhaInput = document.getElementById('InputPassword').value
+function login() {
 
-    if(emailInput=="teste@email.com" && senhaInput==123456) {
-        window.location.href = "https://www.twitch.tv/baiano"
-    } else {
-        erroMessage.style.visibility = 'visible'
+    console.log("entrou")
+
+    const form = document.getElementById('form')
+    const inputEmail = email.value;
+    const inputPassword = password.value;
+
+    if (inputEmail == '' || inputPassword == '') {
+        alert("Preencha todos os campos!");
+        return
     }
-});
+
+    axios.post("http://localhost:3000/login", { email: inputEmail, password: inputPassword })
+        .then(response => {
+            const token = response.data.token;
+            localStorage.setItem('token', token);
+            alert("Seja bem-vindo! Token: " + token);
+            window.location.href = "../home_screen/home_screen.html";
+        })
+        .catch(function (err) {
+            if (err.response && err.response.status == 404) {
+                alert("Email não encontrado!");
+            } else if (err.response && err.response.status == 401) {
+                alert("Senha incorreta");
+            } else if (err.response && err.response.status == 500) {
+                alert("Erro ao fazer login");
+            } else {
+                console.log(err.message);
+            }
+            form.reset();
+        });
+
+}

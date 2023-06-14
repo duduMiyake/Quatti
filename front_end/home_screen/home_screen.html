@@ -37,7 +37,7 @@
     </div>
 
     <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Search on Quatti" aria-label="Search">
+      <input class="form-control me-2" type="search" placeholder="Search on Quatti" aria-label="Search" id="inputPesquisa">
       <button class="btn btn-outline-success" type="submit" id="btn_search">Search</button>
     </form>
   </nav>
@@ -59,7 +59,8 @@
         <!--fim da estrutura de postagem-->
 
         <!--segunda postagem-->
-        <!-- <div class="container container-feed">
+        <!-- 
+         <div class="container container-feed">
           <div class="row row-feed">
             <div class="col-1">
               <img src="../Imagens/icone-perfil-default.png" width="70px" height="70px">
@@ -76,10 +77,9 @@
           </div>
           <div class="row row-items">
             <div class="col-1 col-items" id="first-item">
-              <img src="../Imagens/botao-de-comentar.png" height="35px" id="items">
-            </div>
-            <div class="col-1 col-items">
-              <img src="../Imagens/botao-de-like.png" height="35px" id="items">
+              <button type="button" onclick="curtir('${postagem.like}')" id="likebtn" >
+                <img src="../Imagens/botao-de-like.png" height="35px" id="items">
+              </button>
             </div>
           </div>
         </div> -->
@@ -95,8 +95,8 @@
 
       </div>
       <div class="col-4 lado-direito">
-        <div id="pato-gif">
-          <img src="../Imagens/Pato_gif.gif" alt="" height="300">
+        <div id="quatti-gif">
+          <img src="../Imagens/rascal-playing.gif" alt="" height="300">
         </div>
         
           <a href="../post_screen/post_screen.html" id="txt-quatti">

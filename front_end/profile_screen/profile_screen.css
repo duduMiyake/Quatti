@@ -157,3 +157,12 @@ body {
     background-color: #3d3d3d;
     transition: 0.5s;
 }
+
+#quatti-gif {
+    text-align: center;
+    position: fixed;
+    margin-left: -5% ;
+}
+
+
+

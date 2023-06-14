@@ -100,12 +100,13 @@ body {
 .btn-quatti {
     width: 280px;
     height: 60px;
-    top: 80%;
+    top: 68%;
     right: 9%;
     color: #000000;
     background-color: #DAA213;
     border-radius: 50px;
     position: fixed;
+    margin-right: 3%;
 }
 
 #txt-quatti {
@@ -198,9 +199,9 @@ label {
     width: 450;
 }
 
-#pato-gif {
+#quatti-gif {
     text-align: center;
-    margin-top: 15%;
-    right: 11%;
+    margin-top: 13%;
+    right: 9%;
     position: fixed;
 }

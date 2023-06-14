@@ -3,6 +3,7 @@
         const nickname = document.getElementById("InputNick");
         const password = document.getElementById("InputPassword");
         const confirm = document.getElementById("InputConfirm")
+        const bio = document.getElementById("InputBio")
 
         function quatti() {
             // console.log("entrou");
@@ -12,6 +13,7 @@
             const inputNick = nickname.value;
             const inputPassword = password.value;
             const inputConfirm = confirm.value
+            const inputBio = bio.value
 
             if (inputEmail == '' || inputUser == '' || inputNick == '' || inputPassword == '' || inputConfirm == '') {
                 alert("Preencha todos os campos!")
@@ -36,7 +38,8 @@
                         email: inputEmail,
                         username: inputUser,
                         nickname: inputNick,
-                        password: inputPassword
+                        password: inputPassword,
+                        bio: inputBio
 
                     }).then((response) => {
                         const token = response.data.token;

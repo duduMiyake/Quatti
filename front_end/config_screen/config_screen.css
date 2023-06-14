@@ -26,6 +26,7 @@ body {
 
 .col-nicks {
     margin-left: 50px;
+    width: 50%;
 }
 
 .btn {
@@ -53,4 +54,22 @@ body {
 
 #InputBio {
     width: auto;
+}
+
+#logout{
+    margin-left: 40%;
+}
+
+.custom-col{
+    margin-left: 60%;
+}
+
+#savebtn{
+    width: 200px;
+    margin-right: 40%;
+    
+}
+
+#atention{
+    color: aliceblue;
 }

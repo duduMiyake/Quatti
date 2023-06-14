@@ -3,32 +3,53 @@ const tokenParts = token.split('.');
 const payload = JSON.parse(atob(tokenParts[1]));
 
 const id_usuario = payload.userId
-const username = payload.username
-const nickname = payload.nickname
 
 function publicar() {
     const texto = document.getElementById('textArea')
     const input = texto.value
 
-    if(input == '') {
+    if (input == '') {
         alert("preencha todos os campos")
         return
     }
 
-    axios.post("http://localhost:3000/postagem",  {
+    const date = new Date()
+
+    axios.get("http://localhost:3000/conta/" + payload.userId, {
+        headers: {
+            Authorization: "Bearer " + token
+        }
+    })
+        .then(response => {
         
-        texto: input,
-        id_usuario: id_usuario,
-        username: username, 
-        nickname: nickname
+            const dateLocal = date.toLocaleDateString()
+            const timeLocal = date.toLocaleTimeString()
+            const username = response.data.username
+            const nickname = response.data.nickname
+            const dateTime = timeLocal + ' - ' + dateLocal
+            const like = 0
+            axios.post("http://localhost:4000/postagem", {
 
-    }).then((response) => {
+                texto: input,
+                id_usuario: id_usuario,
+                username: username,
+                nickname: nickname,
+                dateTime: timeLocal + ' - ' + dateLocal,
+                like: like
 
-        alert("postado com sucesso ")
-        window.location.href = "../home_screen/home_screen.html"
+            }).then((response) => {
 
-    }).catch(function (err) {
-        alert(err.message);
-    });
+                alert("postado com sucesso ")
+                window.location.href = "../home_screen/home_screen.html"
+
+            }).catch(function (err) {
+                alert(err.message);
+            });
+
+        })
+
+        .catch(function (err) {
+            alert(err.message)
+        })
 
 }
