@@ -20,6 +20,7 @@ function trocarSenha() {
     
         .then(response=>{
             alert("Senha alterada com sucesso!")
+            window.location.href = "../profile_screen/profile_screen.html"
         })
 
         .catch(function (err){
