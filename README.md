@@ -1,7 +1,18 @@
 # Quatti
-## Trabalho da disciplina Desenvolvimento de plataformas moveis (projeto de rede social)
-## Depois de clonar o repositorio, vá no terminal, de cada uma das pastas que possuem o package.json, e digite "npm install" para instalar a pasta de dependências node_modules.
-## Criar .env e inserir: 
-POST = 5000
-DBUSER = quatti
+Trabalho da disciplina Desenvolvimento de plataformas web
+## Aprendizados
+
+Aprendizado no desenvolvimento tanto de front quanto de backend.
+
+
+## Stack utilizada
+
+**Front-end:** HTML, CSS e Bootstrap
+
+**Back-end:** JavaScript
+
+**Banco de dados:** MongoDB
+
+[README.md](https://github.com/duduMiyake/Quatti/files/14045453/README.md)
+SER = quatti
 DBPASS = senhadoquatti
