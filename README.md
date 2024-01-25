@@ -13,6 +13,5 @@ Aprendizado no desenvolvimento tanto de front quanto de backend.
 
 **Banco de dados:** MongoDB
 
-[README.md](https://github.com/duduMiyake/Quatti/files/14045453/README.md)
 SER = quatti
 DBPASS = senhadoquatti
