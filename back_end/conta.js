@@ -11,7 +11,7 @@ const express = require('express');
 const app = express();
 const port = 3000; //porta padrão
 const jwt = require('jsonwebtoken')
-const SECRET = 'cotton-crayon'
+const SECRET = 'secret'
 
 app.use(require('cors')());
 app.use(express.urlencoded({ extended: true }));
